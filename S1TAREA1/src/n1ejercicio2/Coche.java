@@ -3,19 +3,21 @@ package n1ejercicio2;
 public class Coche {
 	static final String marca="BMW";
 	static String modelo;
-	final int potencia=500;
+	final int potencia;
 	
-	public Coche (String modelo) {
+	public Coche (String modelo, int potencia) {
 		Coche.modelo=modelo;
+		this.potencia=potencia;
 	}
+	
 	static void frenar() {
 		System.out.println("El coche ha frenado");
 	}
 	public void acelerar() {
 		System.out.println("El coche esta acelerando");
 	}
-	public void setPotencia(int potencia) {
-		this.potencia=potencia;
+	public int getPotencia() {
+		return potencia;
 	}
 	@Override
 	public String toString() {

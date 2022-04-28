@@ -6,10 +6,10 @@ public class Cuerda extends Instrumento {
 	public Cuerda (String nombre, double precio)	{
 		super(nombre,precio);
 		cantCuerdas=5;
-		System.out.println("Finalmente estoy en la orquesta");
+		System.out.println("Finalmente estoy en la orquesta- print del construtor");
 	}
 	static {
-		System.out.println("Soy una guitarra que quiere ingresar en la orquesta");
+		System.out.println("Soy una guitarra que quiere ingresar en la orquesta - bloque estatico");
 	}
 	public static void setCantCuerdas(int cantCuerdas) {
 		Cuerda.cantCuerdas=cantCuerdas;
